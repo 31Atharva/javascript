@@ -67,3 +67,42 @@ const myFunction = function(){
 console.log(typeof anotherId);
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3
+
+//****************************** Two types of Memories ******************************// 
+
+// Stack Memory
+//  - primitive data types
+//  - copy of data types
+//  - fixed size
+//  - stored in stack memory
+//  - faster access
+//  - stored in LIFO order
+//  - stored in contiguous memory locations
+
+// Heap Memory
+//  - non-primitive data types
+//  - reference data types
+//  - dynamic size
+//  - stored in heap memory
+//  - slower access
+//  - stored in non-contiguous memory locations
+//  - stored in random order
+
+let myName = "atharva";
+let anotherName = myName;
+anotherName = "IronMan";
+
+console.log(myName);
+console.log(anotherName);
+
+let userOne = {
+    email : "atharva@gmail.com",
+    upiId : "atharva@upi",
+}
+
+let userTwo = userOne;
+
+userTwo.email = "atharvadumbre02@gmail.com";
+
+console.log(userOne.email);
+console.log(userTwo.email);
