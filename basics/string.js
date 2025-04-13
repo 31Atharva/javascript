@@ -23,3 +23,11 @@ console.log(gameName.slice(-7, 6));
 const newStringOne = "      Atharva     ";
 console.log(newStringOne);
 console.log(newStringOne.trim());
+
+const url = "https://www.atharva.com/atharva%20dumbre";
+
+console.log(url.replace("%20", "-"))
+
+console.log(url.includes("atharva"));
+
+console.log(gameName.split("-"));
