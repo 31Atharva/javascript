@@ -54,3 +54,16 @@ const user = [
 console.log(user[1].name)
 
 console.log(Object.keys(tinderUser)) // [ 'ID', 'name', 'age', 'isLoggedIn' ]
+
+const course = {
+    name : "Javascript",
+    price : 199,
+    isPaid : true,
+    courseDetails : {
+        duration : 3,
+        level : "beginner"
+    }
+}
+
+const {name} = course
+console.log(name) // Javascript
