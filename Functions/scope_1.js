@@ -19,7 +19,7 @@ console.log(b)
 console.log(c)
 console.log(d)
 
-// let and const are block scoped
+//let and const are block scoped
 
 let x = 10
 const y = 20
@@ -31,3 +31,23 @@ if (true){
 }
 console.log(x)
 console.log(y)
+
+function one(){
+    const username = "atharva"
+
+    function two(){
+        const website = "youtube"
+        console.log(username)
+    }
+    //console.log(website)
+    two()
+}
+one()
+
+if (true){
+    const username = "atharva"
+    if (username === "atharva"){
+        const website = " youtube"
+        console.log(username + website)
+    }
+}
