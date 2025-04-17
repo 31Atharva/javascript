@@ -51,3 +51,16 @@ if (true){
         console.log(username + website)
     }
 }
+
+function addone(number){ // function declaration , we can access this function before it is declared
+    // hoisting
+    // function declaration is hoisted
+    return number + 1
+}
+
+addone(10)
+
+const addTwo = function(number){ // another method of defining a function but, it is not hoisted 
+    return number + 2
+}
+addTwo(10) 
