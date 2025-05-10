@@ -1,0 +1,1 @@
+console.log("events_basics.js loaded");
